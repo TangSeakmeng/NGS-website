@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import logo from '../images/logo-cia-first-png.png';
 import search from '../images/magnifying-glass.png';
+import menu from '../images/menu.png';
 
 const Header = () => (
     <header>
@@ -79,6 +80,9 @@ const Header = () => (
                         <img src={ '/dist/' + search }></img>
                     </button>
                 </form>
+                <button className="header__menu">
+                    <img src={ '/dist/' + menu }></img>
+                </button>
             </div>
         </div>
         

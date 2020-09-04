@@ -1,5 +1,5 @@
 import React from 'react';
-import video from '../images/CIA_FIRST_International_School.mp4';
+// import video from '../images/CIA_FIRST_International_School.mp4';
 import image from '../images/Education-Landscape-Services_0.jpg'
 
 const VideoAdvertisement = () => {

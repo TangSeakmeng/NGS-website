@@ -34,7 +34,8 @@
   "scripts": {
     "build": "webpack",
     "dev-server": "webpack-dev-server",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "heroku-postbuild": "webpack -p --env production"
   },
   "eslintConfig": {
     "extends": "react-app"

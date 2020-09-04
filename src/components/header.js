@@ -8,7 +8,9 @@ import menu from '../images/menu.png';
 const Header = () => (
     <header>
         <div className="boxHeader">
-            <h1><img src={'/dist/' + logo} alt="CIA First International School" /></h1>
+            <div>
+                <img src={'/dist/' + logo} alt="CIA First International School" />
+            </div>
 
             <div className="navbar">
                 <div className="bar">

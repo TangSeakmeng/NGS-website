@@ -26,7 +26,6 @@
     "sass": "^1.26.10",
     "sass-loader": "^10.0.1",
     "scss-loader": "^0.0.1",
-    "transform-class-properties": "^0.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"

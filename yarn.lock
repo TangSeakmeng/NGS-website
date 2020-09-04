@@ -11503,11 +11503,6 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
-transform-class-properties@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/transform-class-properties/-/transform-class-properties-0.1.0.tgz#034032d77c8d9810de0b3951033fa9af668e5e99"
-  integrity sha512-UWLGS4BK3FpHLdZgHjG9YgShkUDekwhDSoVgrDAGzD13mY38IxAlX6xeGnO6LTCGneR3oGFlArb9nTUghm0FQQ==
-
 ts-pnp@1.1.6, ts-pnp@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.6.tgz#389a24396d425a0d3162e96d2b4638900fdc289a"

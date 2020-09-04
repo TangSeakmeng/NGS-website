@@ -1,0 +1,43 @@
+.box_OurCampus {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+
+    h1 {
+        color: deepskyblue;
+    }
+
+    .box_OurCampus__detail {
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            line-height: 25px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        img {
+            width: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 780px)
+{
+    .box_OurCampus {
+    
+        .box_OurCampus__detail {
+            flex-wrap: wrap;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

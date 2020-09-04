@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+
+.boxHeader {
+    clear: both;
+    position: relative;
+    padding: 10px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    img {
+        width: 320px;
+    }
+
+    .navbar {   
+
+        ul {
+            list-style-type: none;
+    
+            li {
+                float: left;
+
+                .menuItem {
+                    text-decoration: none;
+                    padding: 15px 15px;
+                    font-weight: bold;
+                    color: $secondary-color;
+                } 
+
+                .menuItem:hover {
+                    // background-color: darken($primary-color, 10);
+                    // background-color: $primary-color;
+                    text-decoration: underline;
+                    transition: 0.5s;
+                } 
+
+                ul {
+                    display: none;
+                    position: absolute;
+                    margin-top: 10px;
+                    z-index: 20;
+                    
+                    li {
+                        clear: both;
+                        line-height: 57px;
+                        width: 230px;
+
+                        background-color: darken(white, 10%);
+
+                        .menuItem {
+                            padding: 5px 20px;
+                            display: block;
+                            border-bottom: none;
+                            border-radius: 0px;
+                        }
+                    }
+
+                    li:last-child {
+                        .menuItem {
+                            border-radius: 0px;
+                            padding: 5px 20px;
+                            color: $secondary-color;
+                            background-color: darken(white, 10%);
+                        }
+
+                        .menuItem:hover {
+                            // background-color: $primary-color;
+                            color: $secondary-color;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            
+            li:hover {
+                ul {
+                    display: block;
+                }
+            }
+
+            // li:last-child {
+            //     .menuItem {
+            //         text-decoration: none;
+            //         padding: 20px 25px;
+            //         border-radius: 8px;
+            //         font-weight: bold;
+            //         color: white;
+            //         background-color: $primary-color;
+            //     }
+
+            //     .menuItem:hover {
+            //         // color: white;
+            //         color: $secondary-color;
+            //         text-decoration: underline;
+            //     }
+
+            //     ul {
+
+            //         margin-left: -85px;
+
+            //         li {
+            //             .menuItem {
+            //                 padding: 5px 20px;
+            //                 border-radius: 0px;
+            //                 color: $secondary-color;
+            //                 background-color: white;
+            //             }
+
+            //             .menuItem:hover {
+            //                 // background-color: $primary-color;
+            //                 color: $secondary-color;
+            //                 text-decoration: underline;
+            //             }
+            //         }
+            //     }
+            // }
+        }
+    }
+
+    .header__form {
+        form {
+            display: flex;
+            align-items: center;
+
+            input {
+                padding: 15px 40px 15px 15px;
+                box-shadow: 0px 0px 8px #888888;
+                border: none;
+                border-radius: 8px;
+            }
+
+            button {
+                padding: 5px;
+                border: none;
+                background: unset;
+                margin-left: -35px;
+
+                img {
+                    margin-top: 3px;
+                    width: 20px;
+                }
+            }
+
+            button:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    
+}

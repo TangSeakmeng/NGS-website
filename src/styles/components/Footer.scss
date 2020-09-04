@@ -1,0 +1,189 @@
+footer {
+    clear: both;
+    padding: 50px;
+    background-color: $primary-color;
+    color: white;
+    overflow: auto;
+    font-weight: 600;
+    margin-top: 20px;
+
+    .first-footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .for-subscribe {
+            form input {
+                width: 200px;
+                padding: 10px;
+                border-radius: 8px;
+                margin-right: 5px;
+                border: none;
+                
+                box-sizing: border-box;
+            }
+
+            form button {
+                padding: 8px;
+                border-radius: 8px;
+                border: none;
+                background-color: #228FCF;
+                color: white;
+            }
+
+            form button:hover {
+                background-color: darkorange;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .second-footer-row {
+        margin-top: 20px;
+        margin-bottom: 60px;
+        border-top: 1px solid white;
+
+        div {
+            float: left;
+            width: 30%;
+            margin-top: 30px;
+        }
+
+        div:first-child {
+            margin-left: 0%;
+        }
+
+        div:last-child {
+            width: 40%;
+        }
+
+        .first-column ul {
+            margin-top: 15px;
+            text-decoration: none;
+            list-style-type: none;
+            line-height: 25px;
+
+            li .footer_link {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        .second-column .for-image {
+            width: 100%;
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    float: left;
+                    margin-left: 15px;
+
+                    img {
+                        width: 35px;
+                    }
+                }
+
+                li:first-child {
+                    margin-left: 0px;
+                }
+            }
+        }
+
+        .third-column p {
+            margin-top: 15px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    footer {
+        .first-footer-row {
+            clear: both;
+            display: block;
+    
+            .for-contact-us{
+                width: 100%;
+                text-align: center;
+            }
+    
+            .for-subscribe {
+                clear: both;
+                width: 100%;
+    
+                form input, button {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .second-footer-row {
+            div {
+                width: 100%;
+                text-align: center;
+            }
+
+            div:last-child {
+                width: 100%;
+            }
+
+            .second-column {
+                div {
+                    width: 100%;
+                    margin-top: 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;   
+                }
+
+                .for-image {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    footer {
+        .first-footer-row {
+            .for-subscribe {
+                clear: both;
+                width: 100%;
+
+                form input {
+                    width: 100%;
+                }
+            }
+        }
+
+        .second-footer-row {
+            div {
+                width: 100%;
+                text-align: center;
+            }
+
+            div:last-child {
+                width: 100%;
+            }
+
+            .second-column {
+                div {
+                    width: 100%;
+                    margin-top: 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .for-image {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

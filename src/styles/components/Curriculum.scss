@@ -1,0 +1,87 @@
+.box_Curriculum {
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px;
+
+    .box_Curriculum__container {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        .box_Curriculum__degree {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .box_Curriculum__image {
+                position: relative;
+                width: 24%;
+
+                img {
+                    width: 100%;
+                    transition: 0.5s;
+                }
+
+                button {
+                    display: none;
+                    position: absolute;
+                    top: 40%;
+                    left: 26%;
+                    padding: 15px 25px;
+                    background-image: linear-gradient( 109.6deg,  rgba(121,203,202,1) 11.2%, rgba(119,161,211,1) 91.1% );
+                    border: none;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                button:hover {
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+            }
+
+            .box_Curriculum__image:hover {
+                img {
+                    transition: 0.5s;
+                    filter: brightness(50%);
+                }
+
+                button {
+                    transition: 0.5s;
+                    display: block;
+                }
+            }
+        }
+    
+        .box_Curriculum__text {
+            margin-top: 40px;
+            text-align: center;
+            padding: 20px;
+
+            h1 {
+                color: $primary-color;
+                margin-bottom: 20px;
+            }
+
+            p {
+                line-height: 25px;
+                margin-bottom: 20px;
+            }
+
+            button {
+                transition: 0.5s;
+                border: none;
+                padding: 20px 40px;
+                color: white;
+                font-weight: bold;
+                border-radius: 8px;
+                background-color: $primary-color;
+            }
+
+            button:hover {
+                transition: 0.5s;
+                cursor: pointer;
+                background-color: darken($primary-color, 10);
+            }
+        }
+    }
+}

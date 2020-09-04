@@ -1,0 +1,57 @@
+.box_WhyCIAFirst {
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+    color: white;
+    background-color: $primary-color;
+
+    .box_WhyCIAFirst__container {
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+
+        h1 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            border: none;
+            padding: 20px 40px;
+            color: white;
+            font-weight: bold;
+            background-color: darken($primary-color, 10);
+            border-radius: 8px;
+            transition: 0.5s;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: darken($primary-color, 16);
+            transition: 0.5s;
+        }
+
+        .box_WhyCIAFirst__accrediation {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    .box_WhyCIAFirst__container {
+        .box_WhyCIAFirst__accrediation {
+            img {
+                height: 100px;
+            }
+        }
+    }
+}

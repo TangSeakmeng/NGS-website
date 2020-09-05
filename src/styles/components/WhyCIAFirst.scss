@@ -1,9 +1,10 @@
 .box_WhyCIAFirst {
     width: 100%;
-    padding: 20px;
+    padding: 50px 20px;
     margin-top: 50px;
     color: white;
-    background-color: $primary-color;
+    background-image: radial-gradient( circle 966px at 6.9% 10.8%, $primary-color 0%, lighten($primary-color, 20) 90% );
+    box-shadow: inset 0 0 10px darken($primary-color, 10);
 
     .box_WhyCIAFirst__container {
         max-width: 1000px;

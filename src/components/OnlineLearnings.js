@@ -9,7 +9,7 @@ const OnlineLearning = () => {
             <h1>Find out more about Online Learning at ACS WASC Accredited CIA FIRST!</h1>
             <div className="box_OnlineLearnings__container">
                 <div className="box_OnlineLearnings__onlineLearning">
-                    <img src={'/dist/' + image1} alt="CIA First International School"></img>
+                    <img src={'/dist/' + image1} alt="CIA First International School" style={{ marginLeft: "-12%" }}></img>
                     <div className="box_OnlineLearnings__text">
                         <h1>KES Online Learning</h1>
                         <p>
@@ -20,15 +20,15 @@ const OnlineLearning = () => {
                     </div>
                 </div>
                 <div className="box_OnlineLearnings__onlineLearning">
+                    <img src={'/dist/' + image2} alt="CIA First International School"></img>
                     <div className="box_OnlineLearnings__text">
                         <h1>MSHS Online Learning</h1>
-                        <p style={{paddingRight:"40px", paddingLeft:"0px"}}>
+                        <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
                             since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
                             five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                         </p>
                     </div>
-                    <img src={'/dist/' + image2} alt="CIA First International School"></img>
                 </div>
             </div>
         </div>

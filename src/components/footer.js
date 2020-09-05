@@ -18,10 +18,13 @@ const Footer = () => (
                 <h3>Get Started</h3>
                 <ul>
                     <li><a href="index.html" className="footer_link">Home</a></li>
-                    <li><a href="destinations.html" className="footer_link">Destination</a></li>
-                    <li><a href="hotels.html" className="footer_link">Hotel</a></li>
-                    <li><a href="contactus.html" className="footer_link">Contact Us</a></li>
-                    <li><a href="aboutus.html" className="footer_link">About Us</a></li>
+                    <li><a href="destinations.html" className="footer_link">Enrolment</a></li>
+                    <li><a href="hotels.html" className="footer_link">Online Learning</a></li>
+                    <li><a href="hotels.html" className="footer_link">Community</a></li>
+                    <li><a href="hotels.html" className="footer_link">Work With Us</a></li>
+                    <li><a href="contactus.html" className="footer_link">CIA First Library Catalog</a></li>
+                    <li><a href="aboutus.html" className="footer_link">School Base Login</a></li>
+                    <li><a href="aboutus.html" className="footer_link">CIA First English Center</a></li>
                 </ul>
             </div>
             <div className="second-column">

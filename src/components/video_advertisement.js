@@ -9,6 +9,7 @@ const VideoAdvertisement = () => {
                 <div>
                     <h1>CIA FIRST International School</h1>
                     <p>Cambodia's Leading International School in Cambodia. Start Your Education With Us Today.</p>
+                    <button><p>Book a Tour</p></button>
                 </div>
             </div>
             {/* <video id="background-video" loop autoPlay muted>

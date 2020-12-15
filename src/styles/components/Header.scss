@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,15 +13,167 @@ header {
 
 .boxHeader {
     clear: both;
-    position: relative;
-    padding: 10px 50px;
+    position: fixed;
+    padding: 0px 50px;
+    z-index: 90;
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    box-shadow: 0px 1px 20px #dddddd;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .hamburger__menu {
+        display: none;
+
+        .header__menu {
+            width: 55px;
+            border-radius: 8px;
+            padding: 5px;
+            border: none;
+            background: unset;
+
+            img {
+                margin-top: 3px;
+                width: 30px;
+            }
+        }
+
+        input[type="checkbox"]:checked ~ #sidebarMenu { transform: translateX(0); }
+
+        input[type=checkbox] {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            display: none;
+        }
+
+        .sidebarIconToggle {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            cursor: pointer;
+            position: absolute;
+            z-index: 99;
+            height: 100%;
+            width: 100%;
+            top: 55px;
+            left: 45px;
+            height: 22px;
+            width: 22px;
+        }
+
+        .spinner {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background-color: black;
+        }
+
+        .horizontal {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            position: relative;
+            float: left;
+            margin-top: 3px;
+        }
+
+        .diagonal.part-1 {
+            position: relative;
+            transition: all 0.3s;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .diagonal.part-2 {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            position: relative;
+            float: left;
+            margin-top: 3px;
+        }
+
+        input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            opacity: 0;
+        }
+
+        input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            transform: rotate(135deg);
+            margin-top: 8px;
+        }
+
+        input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            transform: rotate(-135deg);
+            margin-top: -9px;
+        }
+    }
+
+    #sidebarMenu {
+        height: 100%;
+        position: fixed;
+        left: 0;
+        width: 350px;
+        z-index: 100;
+        margin-top: 60px;
+        transform: translateX(-350px);
+        transition: transform 250ms ease-in-out;
+        background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
+    }
+        
+    .sidebarMenuInner {
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.10);
+    }
     
-    img {
-        width: 320px;
+    .sidebarMenuInner li {
+        list-style: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 20px;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    }
+    
+    .sidebarMenuInner li span {
+        display: block;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.50);
+    }
+    
+    .sidebarMenuInner li a {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    .sidebarMenuInner li ul {
+        display: none;
+    }
+
+    .sidebarMenuInner li:hover ul {
+        margin-left: 20px;
+        display: block;
+    }
+
+    .imageHeaderContainer {
+        height: 100px;
+
+        img {
+            height: 100%;
+        }
     }
 
     .navbar {   
@@ -35,6 +189,8 @@ header {
                     padding: 15px 15px;
                     font-weight: bold;
                     color: $secondary-color;
+
+                    font-family: 'Hanuman', serif;
                 } 
 
                 .menuItem:hover {
@@ -133,16 +289,16 @@ header {
         align-items: center;
         // background-color: aqua;
 
-        form {
+        .header__form__box {
             width: 100%;
             display: flex;
             align-items: center;
 
             input {
+                display: block;
                 width: 100%;
                 padding: 15px 40px 15px 15px;
-                box-shadow: 0px 0px 8px #888888;
-                border: none;
+                border: 1px solid lighten(#888888, 30);
                 border-radius: 8px;
             }
 
@@ -163,37 +319,66 @@ header {
             }
         }
 
-        .header__menu {
-            display: none;
-            width: 55px;
-            border-radius: 8px;
-            padding: 5px;
-            border: none;
-            background: unset;
-            margin-left: 20px;
-            box-shadow: 0px 0px 8px #888888;
-
-            img {
-                margin-top: 3px;
-                width: 30px;
-            }
-        }
-
         button:hover {
             cursor: pointer;
         }
+
+        // .header__form__box { 
+        //     input {
+        //         display: block;
+        //         width: 100%;
+        //         padding: 15px 40px 15px 15px;
+        //         border: 1px solid lighten(#888888, 30);
+        //         border-radius: 8px;
+        //     }
+    
+        //     button {
+        //         padding: 5px;
+        //         border: none;
+        //         background: unset;
+        //         margin-left: -35px;
+    
+        //         img {
+        //             margin-top: 3px;
+        //             width: 20px;
+        //         }
+        //     }
+    
+        //     button:hover {
+        //         cursor: pointer;
+        //     }
+        // }
     }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1670px) {
     .boxHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
         .navbar {
             display: none;
         }
-    
+
+        .hamburger__menu {
+            display: block;
+        }
+
         .header__form {
-            .header__menu {
-                display: block;
+            width: 30px;
+
+            .header__form__box {
+                display: inline-block; 
+                text-align: right;
+            
+                .txtSearch {
+                    display: none;
+                }
+
+                button {
+                    margin-left: 0px;
+                }
             }
         }
     }
@@ -201,32 +386,10 @@ header {
 
 @media screen and (max-width: 700px) {
     .boxHeader {
-        width: 100%;
-        padding: 10px;
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 10px 20px 5px 10px;
 
-        flex-wrap: wrap;
-
-        .header__image {
-            margin-left: 5%;
-             
-            img {
-                width: 90%;
-            }
-        }
-
-        .header__form {
-            padding: 20px 20px 10px 20px;
-            width: 100%;
-
-            form {
-                input {
-                    width: 100%;
-                }
-            }
+        img {
+            width: 250px;
         }
     }
 }

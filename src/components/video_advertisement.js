@@ -7,8 +7,8 @@ const VideoAdvertisement = () => {
         <div className="video-advertisement">
             <div className="video-advertisement_text">
                 <div>
-                    <h1>CIA FIRST International School</h1>
-                    <p>Cambodia's Leading International School in Cambodia. Start Your Education With Us Today.</p>
+                    <h1>វិទ្យាល័យព្រះស៊ីសុវត្តិ សាលារៀនជំនាន់ថ្មី</h1>
+                    <p>PREAH SISOWATH HIGH SCHOOL (NEW GENERATION SCHOOL)</p>
                     <button><p>Book a Tour</p></button>
                 </div>
             </div>

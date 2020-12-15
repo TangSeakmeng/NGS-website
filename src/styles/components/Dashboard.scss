@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Moul&display=swap');
+
 .dashboard {
     width: 100%;
+    padding-top: 120px;
 
     .video-advertisement {
         height: 650px;
@@ -21,7 +24,9 @@
             text-align: center;
 
             h1 {
-                font-size: 60px;
+                font-size: 45px;
+                font-weight: normal;
+                font-family: 'Moul', cursive;
             }
 
             p {
@@ -37,6 +42,7 @@
                 border: none;
                 color: white;
                 transition: 0.5s;
+                border-radius: 8px;
 
                 p {
                     opacity: 1.5;

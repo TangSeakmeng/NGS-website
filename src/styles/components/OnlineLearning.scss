@@ -2,7 +2,7 @@
     width: 100%;
     padding: 20px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 
     h1 {
         margin-bottom: 20px;
@@ -21,14 +21,14 @@
         .box_OnlineLearnings__onlineLearning {
             margin-top: 20px;
             width: 45%;
-            box-shadow: 0px 0px 15px darken(white, 15);
+            box-shadow: 0px 0px 15px darken(white, 7);
             overflow: hidden;
             border-bottom-right-radius: 15px;
             border-bottom-left-radius: 15px;
             
             img {
-                display:block;
-                margin:auto;
+                // display:block;
+                // margin:auto;
                 height: 350px;
             }
 
@@ -49,6 +49,19 @@
     }
 }
 
+@media screen and (max-width: 1150px)
+{
+    .box_OnlineLearnings {
+
+        .box_OnlineLearnings__container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}
+
 @media screen and (max-width: 1000px)
 {
     .box_OnlineLearnings {
@@ -61,7 +74,7 @@
 
                 img {
                     margin: 0 auto;
-                    width: 300px;
+                    height: 350px;
                     transition: 0.5s;
                     margin-bottom: 20px;
                 }
@@ -89,13 +102,19 @@
 @media screen and (max-width: 780px)
 {
     .box_OnlineLearnings {
+        padding: 30px;
     
         .box_OnlineLearnings__container {
+            flex-wrap: wrap;
 
             .box_OnlineLearnings__onlineLearning {
+                width: 100%;
+                overflow: hidden;
+
                 img {
-                    width: 300px;
-                    transition: 0.5s;
+                    // height: 100%;
+                    width: 100%;
+                    height: auto;
                 }
 
                 .box_OnlineLearnings__text {
@@ -103,6 +122,11 @@
                         font-size: 25px;
                     }
                 }
+            }
+
+            .box_OnlineLearnings__onlineLearning:first-child {
+                padding: 0px;
+                margin-bottom: 30px;
             }
         }
     }
